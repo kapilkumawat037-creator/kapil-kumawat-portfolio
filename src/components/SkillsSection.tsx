@@ -1,18 +1,12 @@
 import { motion } from "framer-motion";
 
 const skillCategories = [
-  {
-    label: "Languages",
-    skills: ["Python", "C", "Node.js", "MySQL"],
-  },
-  {
-    label: "Tools & Platforms",
-    skills: ["VS Code", "Figma", "Microsoft Excel", "Xilinx-ISE (VHDL)"],
-  },
-  {
-    label: "Design",
-    skills: ["Architectural Design", "UI/UX Prototyping"],
-  },
+  { label: "Languages", skills: ["Python", "C"] },
+  { label: "Frameworks & Runtime", skills: ["Node.js"] },
+  { label: "Databases", skills: ["MySQL"] },
+  { label: "Tools", skills: ["VS Code", "Figma", "Microsoft Excel"] },
+  { label: "Hardware Description", skills: ["Xilinx-ISE", "VHDL"] },
+  { label: "Creative", skills: ["Architectural Design"] },
 ];
 
 const SkillsSection = () => {
@@ -31,14 +25,14 @@ const SkillsSection = () => {
           <div className="w-16 h-1 bg-gradient-primary rounded-full mb-12" />
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((cat, ci) => (
             <motion.div
               key={cat.label}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: ci * 0.1 }}
+              transition={{ duration: 0.5, delay: ci * 0.08 }}
             >
               <h3 className="font-display font-semibold text-sm tracking-widest uppercase text-primary mb-4">
                 {cat.label}

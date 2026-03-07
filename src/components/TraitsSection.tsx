@@ -5,17 +5,17 @@ const traits = [
   {
     icon: Guitar,
     title: "Guitar Enthusiast",
-    desc: "Music fuels creativity. Playing guitar brings rhythm and discipline into my life — skills that translate directly into focused problem-solving.",
+    desc: "Music fuels my creativity, patience, and discipline. Playing guitar brings rhythm into my life — skills that translate directly into focused problem-solving and sustained concentration.",
   },
   {
     icon: Sparkles,
-    title: "Motivational Spirit",
-    desc: "I believe in lifting others up. Whether it's a team project or a study group, my energy and optimism help drive collective success.",
+    title: "Natural Motivator",
+    desc: "I believe in lifting others up. Whether it's a team project or a study group, I inspire teams, foster positivity, and support others through self-doubt to drive collective success.",
   },
   {
     icon: BookOpen,
     title: "Lifelong Learner",
-    desc: "Technology never stops evolving, and neither do I. From certifications to side projects, I'm always expanding my toolkit and horizons.",
+    desc: "Technology never stops evolving, and neither do I. From certifications to side projects, I'm a firm believer in continuous learning and self-improvement — always expanding my toolkit.",
   },
 ];
 

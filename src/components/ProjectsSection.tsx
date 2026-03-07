@@ -7,7 +7,7 @@ const projects = [
     title: "Snake Game",
     tech: "Python · Pygame · OOP",
     date: "Oct 2025",
-    desc: "A classic reimagined — built a fully interactive Snake game leveraging Pygame for rendering and OOP principles for clean, maintainable game logic. Features smooth controls, score tracking, and escalating difficulty that keeps players hooked.",
+    desc: "A classic reimagined with modular OOP design. Built a fully interactive Snake game leveraging Pygame for real-time rendering, featuring smooth controls, dynamic score tracking, and escalating difficulty — demonstrating clean code architecture and game loop management.",
     status: "completed" as const,
   },
   {
@@ -15,7 +15,7 @@ const projects = [
     title: "IMDb Web Scraper",
     tech: "Python · BeautifulSoup · Pandas · Requests",
     date: "Oct – Nov 2025",
-    desc: "Engineered a data pipeline that scrapes IMDb for movie metadata — ratings, genres, cast — and transforms raw HTML into structured, analysis-ready datasets using Pandas. A hands-on dive into web scraping, data cleaning, and automation.",
+    desc: "Automated scraper that extracts movie metadata — titles, ratings, genres, cast, and reviews — from IMDb. Transforms raw HTML into structured CSV/Excel datasets ready for ML training and data analysis, showcasing web scraping, data cleaning, and pipeline automation skills.",
     status: "completed" as const,
   },
   {
@@ -23,7 +23,7 @@ const projects = [
     title: "Reminder App",
     tech: "In Progress",
     date: "Feb 2026 – Present",
-    desc: "Currently building a notification-based reminder application that lets users set time-based alerts with custom name, date/time, and message fields. Focused on clean UX and reliable push notifications to help users stay on track.",
+    desc: "Smart notification app allowing users to schedule personalized reminders with name, date/time, and custom message fields. Solves the common problem of forgetting tasks under pressure, with a focus on clean UX and reliable time-based notifications.",
     status: "in-progress" as const,
   },
 ];
