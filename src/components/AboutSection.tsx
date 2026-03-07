@@ -24,10 +24,7 @@ const AboutSection = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-lg text-muted-foreground leading-relaxed mb-12 max-w-3xl"
         >
-          I'm a driven Computer Science student specializing in Artificial Intelligence at
-          JK Lakshmipat University, Jaipur (2024–2028), maintaining a solid 7 CGPA. My passion
-          lies at the intersection of technology and problem-solving — from designing efficient
-          algorithms to building real-world applications that make an impact.
+          I'm currently pursuing a B.Tech in Computer Science (AI) at JK Lakshmipat University, Jaipur (2024–2028), with a CGPA of 7.0. I have a strong foundation in Algorithms, Object-Oriented Programming, DBMS, Python, and Web Development. I'm actively exploring AI/ML and building projects that solve real-world problems — from automating data pipelines to crafting interactive applications. I'm looking for internships, open-source opportunities, and tech collaborations where I can contribute, learn, and grow.
         </motion.p>
 
         <div className="grid md:grid-cols-3 gap-6">

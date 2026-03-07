@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import heroBg from "@/assets/hero-bg.jpg";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Briefcase } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const HeroSection = () => {
   return (
@@ -12,11 +13,37 @@ const HeroSection = () => {
       />
       <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/60 to-background" />
 
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto flex flex-col items-center">
+        {/* Profile Photo */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+          className="relative mb-6 group"
+        >
+          <div className="relative rounded-full p-1 bg-gradient-primary shadow-glow">
+            <Avatar className="w-32 h-32 md:w-40 md:h-40 border-4 border-background group-hover:scale-105 transition-transform duration-300">
+              <AvatarImage src="" alt="Kapil Kumawat" />
+              <AvatarFallback className="text-3xl md:text-4xl font-display font-bold bg-secondary text-primary">
+                KK
+              </AvatarFallback>
+            </Avatar>
+          </div>
+          {/* Open to Work Badge */}
+          <motion.div
+            animate={{ y: [0, -4, 0] }}
+            transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+            className="absolute -bottom-2 left-1/2 -translate-x-1/2 flex items-center gap-1.5 px-3 py-1 rounded-full bg-accent text-accent-foreground text-xs font-semibold whitespace-nowrap shadow-lg"
+          >
+            <Briefcase className="w-3 h-3" />
+            Open to Work
+          </motion.div>
+        </motion.div>
+
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.6, delay: 0.15 }}
           className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4 font-body"
         >
           B.Tech Computer Science (AI) • JK Lakshmipat University
@@ -25,7 +52,7 @@ const HeroSection = () => {
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.15 }}
+          transition={{ duration: 0.7, delay: 0.25 }}
           className="text-5xl md:text-7xl lg:text-8xl font-bold font-display tracking-tight mb-6"
         >
           Kapil{" "}
@@ -35,7 +62,7 @@ const HeroSection = () => {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
           className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 font-body"
         >
           Aspiring AI/ML Engineer & Software Developer crafting intelligent solutions
@@ -45,20 +72,20 @@ const HeroSection = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.45 }}
+          transition={{ duration: 0.6, delay: 0.55 }}
           className="flex flex-wrap gap-4 justify-center"
         >
           <a
-            href="#projects"
+            href="#contact"
             className="px-8 py-3 rounded-lg bg-gradient-primary font-display font-semibold text-sm tracking-wide text-primary-foreground hover:opacity-90 transition-opacity"
           >
-            View My Work
+            Hire Me
           </a>
           <a
-            href="#contact"
+            href="#projects"
             className="px-8 py-3 rounded-lg border border-border font-display font-semibold text-sm tracking-wide text-foreground hover:bg-secondary transition-colors"
           >
-            Get in Touch
+            View Projects
           </a>
         </motion.div>
       </div>
