@@ -24,7 +24,7 @@ const HeroSection = () => {
         >
           <div className="relative rounded-full p-1 bg-gradient-primary shadow-glow">
             <Avatar className="w-32 h-32 md:w-40 md:h-40 border-4 border-background group-hover:scale-105 transition-transform duration-300">
-              <AvatarImage src="" alt="Kapil Kumawat" />
+              <AvatarImage src={profilePhoto} alt="Kapil Kumawat" className="object-cover" />
               <AvatarFallback className="text-3xl md:text-4xl font-display font-bold bg-secondary text-primary">
                 KK
               </AvatarFallback>
