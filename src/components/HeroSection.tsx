@@ -26,7 +26,7 @@ const HeroSection = () => {
               <img
                 src={profilePhoto}
                 alt="Kapil Kumawat"
-                className="w-48 md:w-64 rounded-2xl border-4 border-background group-hover:scale-105 transition-transform duration-300 object-contain"
+                className="w-40 md:w-52 rounded-2xl border-4 border-background group-hover:scale-105 transition-transform duration-300 object-cover object-top"
               />
             </div>
           {/* Open to Work Badge */}
