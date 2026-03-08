@@ -22,14 +22,13 @@ const HeroSection = () => {
           transition={{ duration: 0.6 }}
           className="relative mb-6 group"
         >
-          <div className="relative rounded-full p-1 bg-gradient-primary shadow-glow">
-            <Avatar className="w-44 h-44 md:w-56 md:h-56 border-4 border-background group-hover:scale-105 transition-transform duration-300">
-              <AvatarImage src={profilePhoto} alt="Kapil Kumawat" className="object-cover" />
-              <AvatarFallback className="text-3xl md:text-4xl font-display font-bold bg-secondary text-primary">
-                KK
-              </AvatarFallback>
-            </Avatar>
-          </div>
+           <div className="relative rounded-2xl p-1 bg-gradient-primary shadow-glow overflow-hidden">
+              <img
+                src={profilePhoto}
+                alt="Kapil Kumawat"
+                className="w-48 md:w-64 rounded-2xl border-4 border-background group-hover:scale-105 transition-transform duration-300 object-contain"
+              />
+            </div>
           {/* Open to Work Badge */}
           <motion.div
             animate={{ y: [0, -4, 0] }}
