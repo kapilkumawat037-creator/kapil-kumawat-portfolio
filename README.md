@@ -1,9 +1,7 @@
 # Welcome to your Lovable project
 
 ## Portfolio link
-
-**URL**: https://id-preview--834b57e0-32ed-4d11-88c4-f801999f4d5b.lovable.app/#kapil kumawat
-
+https://id-preview--834b57e0-32ed-4d11-88c4-f801999f4d5b.lovable.app/#about
 ## How can I edit this code?
 
 There are several ways of editing your application.
